@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Image Gallery</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/150?random=1" alt="Nature">
+            <p>Beautiful Nature</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/150?random=2" alt="Mountain">
+            <p>Beautiful Mountain</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/150?random=3" alt="Beach">
+            <p>Beautiful Beach</p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <a href="{% url 'contact' %}">Contact Me</a>
+
+</body>
+</html>
